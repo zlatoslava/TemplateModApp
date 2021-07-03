@@ -9,5 +9,30 @@
         android:id="@+id/mainMenuFragment"
         android:name="com.example.templatemodapp.ui.MainMenuFragment"
         android:label="MainMenuFragment"
-        tools:layout="@layout/fragment_main_menu"/>
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_downloadFragment"
+            app:destination="@id/downloadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.example.templatemodapp.ui.DownloadFragment"
+        android:label="DownloadFragment"
+        tools:layout="@layout/fragment_download"/>
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.example.templatemodapp.ui.GuideFragment"
+        android:label="GuideFragment"
+        tools:layout="@layout/fragment_guide"/>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.templatemodapp.ui.InfoFragment"
+        android:label="InfoFragment"
+        tools:layout="@layout/fragment_info"/>
 </navigation>
