@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">TemplateModApp</string>
+
+    <!-- Сообщение об ошибке -->
+    <string name="toast_failed_show_ad">To download you need to watch the video!</string>
+
+    <!-- Тексты -->
+    <string name="guide_text">
+        Hello!\nIf this is your first time with how to download or install a mod, don\'t worry, we will help :)\nBelow we will tell you how to install the mod on MCPE. You can find information on how to download the mod by clicking on the "INFO" button in the main menu.\n\nTo install the mod:\n\n1. Download the mod files marked .mcpack by clicking on the "DOWNLOAD" button. The first file is the mod itself, and the second is the mod textures.\n\n2. Just open the file (via ES Explorer on Android) and the game will install everything you need.\n\n3. Launch MCPE and go to world editing. Now in the window for creating a new world or editing an existing one, go to the "Resource Sets" tab.\n\n4. Find the texture pack and click on it, and then on the "+" to activate\n\n5. Now go to the Presets tab and find the mod itself, then do the same as above to enable it.\n\nThe mod is installed, enjoy the game!
+    </string>
+
+    <string name="info_text">
+        Hello!\nIn this application you can download mods for MCPE, which will add a lot of cool and powerful weapons to make the game process even more interesting and dynamic. Now you can arrange real battles with your friends.\n\nSoon, the application will have a lot of cool mods, don\'t miss it!\n\nTo download the mod you like:\n\n1. Click on the “DOWNLOAD” button, in the main menu;\n\n2. Choose the mod you want to download;\n\n3. Download the mod by clicking on the “LINK” button (you will go to the Google Disk, which contains the mod, for download);\n\n4. Install the mod, according to the instructions that you will find by clicking the “GUIDE” button, in the main menu.\n\n
+    </string>
+
+    <string name="download_text">
+        To download the mod, click on the "DOWNLOAD" button (you will go to the Google Disk where the mod is stored for downloading). You can view the detailed information by clicking on the "GUIDE" button in the main menu.
+    </string>
+
+    <string name="description_of_transport">Hello!
+        \n\nSports cars, planes, boats and even rockets like in SPACEX, on which you can go to conquer space and galaxies of the MCPE world - you will find all this in this application :)
+        \n\nIn the app you will find various mods that will add vehicles to:
+        \n\n- arrange sports car races with your friends;
+        \n\n- quickly move around the world using planes, helicopters and even missiles;
+        \n\n- oceans, lakes are not afraid of you now, because you will have boats, ships and jet skis.
+        \n\nMore than 10 aircraft, small and large, fast, maneuverable!
+        \n\nSports cars for every taste.
+        \n\nMore than 15 types of boats on which you can go on a journey in search of new islands and lands!
+        \n\nAnd even 4 rockets for flights in the MCPE universe.
+        \n\nFollow the addition of new mods in the application, do not miss!</string>
+
+    <string name="description_of_guns">Hello! Have you been looking for an application for a long time in which you can download many cool weapon mods on MCPE?
+        \n\nIn the application you will find a lot of mods for adding a lot of cool and powerful weapons to MCPE to make the game process even more interesting and dynamic.
+        \n\nDownload and check how each of the weapons works on mobs, objects, players.
+        \n\nWaiting for you: machine guns,, shotguns, pistols, bazookas, grenades and other equipment.
+        \n\nNow you can arrange real battles with your friends :)
+        \n\nFollow the addition of new mods in the application, do not miss!</string>
+
+    <string name="title_of_transport_mod">Transport Mods</string>
+    <string name="title_of_guns_mod">Guns Mods</string>
+
+    <!--  Описание картинок -->
+    <string name="description_of_logo">Logotype "GO Games Studio"</string>
+    <string name="description_of_btn_info">Button "Information"</string>
+    <string name="description_of_btn_guide">Button "Guide"</string>
+    <string name="description_of_btn_download">Button "Download"</string>
+    <string name="description_of_btn_video">Button "Screen"</string>
+    <string name="description_of_screen">Screen</string>
+    <string name="description_of_cover_transport" translatable="false">Image Transport Mods</string>
+    <string name="description_of_cover_guns" translatable="false">Image Guns Mods</string>
+    <string name="description_of_btn_all_mods">All mods button</string>
+</resources>
