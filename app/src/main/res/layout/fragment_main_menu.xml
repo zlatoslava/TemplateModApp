@@ -5,77 +5,67 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:contentDescription="@string/description_of_logo"
+    <include
+        android:id="@+id/logo_layout"
+        layout="@layout/image_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/btnInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/large"
+        android:layout_margin="@dimen/xx_large"
         android:contentDescription="@string/description_of_btn_info"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgLogo"
-        app:srcCompat="@drawable/info_button" />
+        app:layout_constraintTop_toBottomOf="@id/logo_layout"
+        app:srcCompat="@drawable/ic_info" />
 
     <ImageView
         android:id="@+id/btnGuide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small"
         android:contentDescription="@string/description_of_btn_guide"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnInfo"
-        app:srcCompat="@drawable/guid_button" />
+        app:srcCompat="@drawable/ic_guide" />
 
     <ImageView
         android:id="@+id/btnScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small"
         android:contentDescription="@string/description_of_btn_video"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGuide"
-        app:srcCompat="@drawable/screens_button" />
+        app:srcCompat="@drawable/ic_screens" />
 
     <ImageView
         android:id="@+id/btnAllMods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
+        android:layout_marginTop="@dimen/small"
+        android:contentDescription="@string/description_of_btn_all_mods"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnScreen"
-        app:srcCompat="@drawable/all_mods_button"
-        android:contentDescription="@string/description_of_btn_all_mods" />
+        app:srcCompat="@drawable/ic_all_mods" />
 
     <ImageView
         android:id="@+id/btnDownload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large"
         android:contentDescription="@string/description_of_btn_download"
-        android:scaleX="0.7"
-        android:scaleY="0.7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAllMods"
-        app:srcCompat="@drawable/download_button" />
+        app:srcCompat="@drawable/ic_download" />
 
     <LinearLayout
         android:id="@+id/forBanner"
@@ -86,7 +76,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAllMods">
+        app:layout_constraintTop_toBottomOf="@+id/btnDownload">
 
         <View
             android:id="@+id/adView"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMod"
+    android:layout_margin="@dimen/small"
+    android:background="@android:color/transparent"
+    app:cardCornerRadius="@dimen/small">
+
+    <ImageView
+        android:id="@+id/imgModIcon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="@string/image_mod_desc"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/icon_guns_new" />
+
+</com.google.android.material.card.MaterialCardView>

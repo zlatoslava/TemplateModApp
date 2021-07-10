@@ -54,28 +54,6 @@
         Ты можешь посмотреть детальную информацию, нажав на кнопку “GUIDE”, в главном меню приложения.
     </string>
 
-    <string name="description_of_transport">Hello!
-        \n\nSports cars, planes, boats and even rockets like in SPACEX, on which you can go to conquer space and galaxies of the MCPE world - you will find all this in this application :)
-        \n\nIn the app you will find various mods that will add vehicles to:
-        \n\n- arrange sports car races with your friends;
-        \n\n- quickly move around the world using planes, helicopters and even missiles;
-        \n\n- oceans, lakes are not afraid of you now, because you will have boats, ships and jet skis.
-        \n\nMore than 10 aircraft, small and large, fast, maneuverable!
-        \n\nSports cars for every taste.
-        \n\nMore than 15 types of boats on which you can go on a journey in search of new islands and lands!
-        \n\nAnd even 4 rockets for flights in the MCPE universe.
-        \n\nFollow the addition of new mods in the application, do not miss!</string>
-
-    <string name="description_of_guns">Hello! Have you been looking for an application for a long time in which you can download many cool weapon mods on MCPE?
-        \n\nIn the application you will find a lot of mods for adding a lot of cool and powerful weapons to MCPE to make the game process even more interesting and dynamic.
-        \n\nDownload and check how each of the weapons works on mobs, objects, players.
-        \n\nWaiting for you: machine guns,, shotguns, pistols, bazookas, grenades and other equipment.
-        \n\nNow you can arrange real battles with your friends :)
-        \n\nFollow the addition of new mods in the application, do not miss!</string>
-
-    <string name="title_of_transport_mod">Transport Mods</string>
-    <string name="title_of_guns_mod">Guns Mods</string>
-
     <!--  Описание картинок -->
     <string name="description_of_logo">Logotype "GO Games Studio"</string>
     <string name="description_of_btn_info">Button "Information"</string>
@@ -83,7 +61,10 @@
     <string name="description_of_btn_download">Button "Download"</string>
     <string name="description_of_btn_video">Button "Screen"</string>
     <string name="description_of_screen">Screen</string>
-    <string name="description_of_cover_transport">Image Transport Mods</string>
-    <string name="description_of_cover_guns" translatable="false">Image Guns Mods</string>
     <string name="description_of_btn_all_mods">All mods button</string>
+    <string name="image_mod_desc">Mod icon</string>
+
+
+    <string name="no_mods">Ждите в ближайшее время.</string>
+    <string name="invalid_link">Что-то пошло не так.</string>
 </resources>

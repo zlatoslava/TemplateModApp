@@ -40,7 +40,7 @@ class MainMenuFragment : Fragment() {
 
         }
         btnAllMods.setOnClickListener {
-
+            findNavController().navigate(R.id.action_mainMenuFragment_to_allModsFragment)
         }
         btnDownload.setOnClickListener {
             findNavController().navigate(R.id.action_mainMenuFragment_to_downloadFragment)
