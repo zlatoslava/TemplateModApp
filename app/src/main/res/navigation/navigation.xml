@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_mainMenuFragment_to_allModsFragment"
             app:destination="@id/allModsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_screenshotsFragment"
+            app:destination="@id/screenshotsFragment" />
     </fragment>
     <fragment
         android:id="@+id/downloadFragment"
@@ -43,4 +46,8 @@
         android:name="com.example.templatemodapp.ui.AllModsFragment"
         android:label="AllModsFragment"
         tools:layout="@layout/fragment_all_mods" />
+    <fragment
+        android:id="@+id/screenshotsFragment"
+        android:name="com.example.templatemodapp.ui.ScreenshotsFragment"
+        android:label="ScreenshotsFragment" />
 </navigation>

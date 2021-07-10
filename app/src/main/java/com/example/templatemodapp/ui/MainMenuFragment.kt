@@ -37,7 +37,7 @@ class MainMenuFragment : Fragment() {
             findNavController().navigate(R.id.action_mainMenuFragment_to_guideFragment)
         }
         btnScreen.setOnClickListener {
-
+            findNavController().navigate(R.id.action_mainMenuFragment_to_screenshotsFragment)
         }
         btnAllMods.setOnClickListener {
             findNavController().navigate(R.id.action_mainMenuFragment_to_allModsFragment)

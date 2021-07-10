@@ -6,29 +6,77 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvAllMods"
+    <View
+        android:id="@+id/back_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_margin="@dimen/standard"
         android:background="@color/textBackgroundColor"
+        app:layout_constraintBottom_toTopOf="@+id/forBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_AllMods"
+        style="@style/TextInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingHorizontal="@dimen/standard"
+        android:text="@string/all_mods"
+        app:layout_constraintEnd_toEndOf="@id/back_view"
+        app:layout_constraintStart_toStartOf="@id/back_view"
+        app:layout_constraintTop_toTopOf="@id/back_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAllMods"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:scrollbars="vertical"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="32dp"
+        app:layout_constraintBottom_toBottomOf="@id/back_view"
+        app:layout_constraintEnd_toEndOf="@id/back_view"
+        app:layout_constraintStart_toStartOf="@id/back_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_AllMods"
         tools:listitem="@layout/item_mod" />
 
     <com.google.android.material.textview.MaterialTextView
-        style="@style/TextInfo"
         android:id="@+id/noMods"
+        style="@style/TextInfo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/standard"
         android:background="@color/textBackgroundColor"
         android:gravity="center"
-        android:visibility="gone"
         android:text="@string/no_mods"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/forBanner"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--        <com.google.android.gms.ads.AdView-->
+        <!--            android:id="@+id/adView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            app:adSize="BANNER"-->
+        <!--            app:adUnitId="ca-app-pub-9680057449943942/8116336545" />-->
+        <View
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

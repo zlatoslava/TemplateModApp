@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.annotation.DrawableRes
 import androidx.annotation.LayoutRes
 import com.bumptech.glide.Glide
 import com.example.templatemodapp.R
@@ -16,6 +17,16 @@ fun ImageView.loadImage(url: String){
     Glide.with(this)
         .load(url)
         .centerCrop()
+        .placeholder(R.drawable.ic_image)
+        .error(R.drawable.ic_broken_image)
+        .into(this)
+}
+
+fun ImageView.loadImageFitCenter(@DrawableRes id: Int){
+    Glide.with(this)
+        .asDrawable()
+        .load(id)
+        .fitCenter()
         .placeholder(R.drawable.ic_image)
         .error(R.drawable.ic_broken_image)
         .into(this)
