@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
@@ -10,10 +10,11 @@
         android:id="@+id/scrollView"
         style="@style/ScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_margin="@dimen/standard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -22,7 +23,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/standard"
-            tools:text="@string/guide_text" />
+            android:text="@string/guide_text" />
     </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/key_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,7 +56,7 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:2.3.5"
 
     //ADS
-//    implementation 'com.google.android.gms:play-services-ads:17.2.2'
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
 //    implementation 'com.google.firebase:firebase-ads:19.1.0'
 
     //Image loading

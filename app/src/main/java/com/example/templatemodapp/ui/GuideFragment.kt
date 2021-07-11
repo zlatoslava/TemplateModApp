@@ -6,14 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.templatemodapp.R
-import kotlinx.android.synthetic.main.fragment_guide.*
+import com.google.android.gms.ads.AdRequest
+import kotlinx.android.synthetic.main.fragment_guide.adView
 
 
 class GuideFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private val adRequest = AdRequest.Builder().build()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,6 +23,10 @@ class GuideFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        tvGuide.text = getText(R.string.guide_text)
+        initAdds()
+    }
+
+    private fun initAdds() {
+        adView.loadAd(adRequest)
     }
 }

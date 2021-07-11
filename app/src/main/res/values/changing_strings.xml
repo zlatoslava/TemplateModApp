@@ -2,7 +2,7 @@
     <string name="app_name">TemplateModApp</string>
 
     <!-- Сообщения об ошибке -->
-    <string name="toast_failed_show_ad">Чтобы загрузить, нужно сначала посмотреть видео!</string>
+    <string name="toast_failed_show_ad">Чтобы загрузить мод, сначала посмотри видео, нажав на DOWNLOAD!</string>
     <string name="invalid_link">Что-то пошло не так.</string>
 
     <string name="no_mods">Ждите в ближайшее время.</string>
@@ -63,4 +63,12 @@
         При нажатии на иконку любого из модов, ты перейдешь на наш магазин разработчика Play Market, для его загрузки.\n\n
         Выбирай и скачивай!
     </string>
+
+    <!-- Ключи для рекламы -->
+    <string name="key_banner" translatable="false">@string/test_key_banner</string>
+    <string name="key_interstitial" translatable="false">@string/test_key_interstitial</string>
+    <string name="key_reward" translatable="false">@string/test_key_reward</string>
+
+    <!-- Ссылка для загрузки мода. ВАЖНО! должна начинаться с "https://"-->
+    <string name="download_link" translatable="false">https://www.google.com</string>
 </resources>

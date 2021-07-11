@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,11 +30,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/info_text_part_one" />
 
-            <View
+            <com.google.android.gms.ads.AdView
                 android:id="@+id/adView"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@color/black" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/standard"
+                ads:adSize="LARGE_BANNER"
+                ads:adUnitId="@string/key_banner" />
 
             <TextView
                 android:id="@+id/tvInfoPartTwo"
@@ -42,6 +46,5 @@
                 android:layout_height="wrap_content"
                 android:text="@string/info_text_part_two" />
         </LinearLayout>
-
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
@@ -56,36 +56,21 @@
         android:contentDescription="@string/description_of_btn_download"
         android:scaleX="0.8"
         android:scaleY="0.8"
-        app:layout_constraintBottom_toTopOf="@id/forBanner"
+        app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/scrollView"
         app:srcCompat="@drawable/download_button" />
 
-    <LinearLayout
-        android:id="@+id/forBanner"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_margin="16dp"
-        android:orientation="vertical"
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/key_banner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Linear">
-
-        <!--        <com.google.android.gms.ads.AdView-->
-        <!--            android:id="@+id/adView"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_alignParentBottom="true"-->
-        <!--            android:layout_centerHorizontal="true"-->
-        <!--            app:adSize="BANNER"-->
-        <!--            app:adUnitId="ca-app-pub-9680057449943942/8116336545" />-->
-        <View
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/black" />
-    </LinearLayout>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

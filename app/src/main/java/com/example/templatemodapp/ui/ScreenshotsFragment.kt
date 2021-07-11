@@ -10,15 +10,15 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import com.example.templatemodapp.R
 import com.example.templatemodapp.ui.data.ScreenshotsResource
 import com.example.templatemodapp.utils.loadImageFitCenter
+import com.google.android.gms.ads.AdRequest
 import kotlinx.android.synthetic.main.fragment_screenshots.*
+import kotlinx.android.synthetic.main.fragment_screenshots.adView
 import kotlinx.android.synthetic.main.item_screenshot.*
 
 
 class ScreenshotsFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private val adRequest = AdRequest.Builder().build()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,6 +30,7 @@ class ScreenshotsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViews()
+        initAdds()
     }
 
     private fun initViews() {
@@ -42,6 +43,9 @@ class ScreenshotsFragment : Fragment() {
         val pagerAdapter = MyPagerAdapter(childFragmentManager, fragments)
         view_pager.adapter = pagerAdapter
         tab_layout.setupWithViewPager(view_pager, true)
+    }
+    private fun initAdds() {
+        adView.loadAd(adRequest)
     }
 }
 
