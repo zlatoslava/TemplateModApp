@@ -10,7 +10,10 @@
     <string name="description_of_btn_all_mods">All mods button</string>
     <string name="image_mod_desc">Mod icon</string>
 
+    <!--  Ключи рекламы для тестирования -->
     <string name="test_key_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="test_key_add_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
     <string name="test_key_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
     <string name="test_key_reward" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="test_admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
 </resources>

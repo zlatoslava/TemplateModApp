@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginHorizontal="@dimen/standard"
-                app:srcCompat="@drawable/app_cover" />
+                app:srcCompat="@drawable/mod_cover" />
 
             <TextView
                 android:id="@+id/infoTextView"

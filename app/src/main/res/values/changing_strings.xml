@@ -66,9 +66,13 @@
 
     <!-- Ключи для рекламы -->
     <string name="key_banner" translatable="false">@string/test_key_banner</string>
+    <string name="key_add_open" translatable="false">@string/test_key_add_open</string>
     <string name="key_interstitial" translatable="false">@string/test_key_interstitial</string>
     <string name="key_reward" translatable="false">@string/test_key_reward</string>
 
     <!-- Ссылка для загрузки мода. ВАЖНО! должна начинаться с "https://"-->
     <string name="download_link" translatable="false">https://www.google.com</string>
+
+    <!-- AdMob id приложения -->
+    <string name="admob_app_id" translatable="false">@string/test_admob_app_id</string>
 </resources>

@@ -11,13 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initializeAds()
+//        initializeAds()
     }
 
     private fun initializeAds() {
-        MobileAds.initialize(this) {}
-        val testDeviceIds = Arrays.asList("D37A55507A63B5E94A134B5BE527F18B")
-        val configuration = RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build()
-        MobileAds.setRequestConfiguration(configuration)
+//        MobileAds.initialize(this) {}
+//        val testDeviceIds = Arrays.asList("D37A55507A63B5E94A134B5BE527F18B")
+//        val configuration = RequestConfiguration.Builder().setTestDeviceIds(testDeviceIds).build()
+//        MobileAds.setRequestConfiguration(configuration)
     }
 }
