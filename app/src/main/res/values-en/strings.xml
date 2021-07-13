@@ -1,0 +1,55 @@
+<resources>
+	<string name="app_name">TemplateModApp</string>
+	<string name="toast_failed_show_ad">To download the mod, first watch the video by clicking on DOWNLOAD!</string>
+	<string name="invalid_link">Something went wrong.</string>
+	<string name="no_mods">Coming soon.</string>
+	<string name="guide_text">Hello! \n\n
+        In this section, you will find instructions from the sequential steps to install the mod on MCPE, on your device. \n\n
+        <b> Instructions for installing mods on MCPE </b> \n
+        1. Download the mod file. \n
+        You can find information on how to download the mod by clicking on the "INFO" button in the main menu of the application. \n
+        2. Find it in the downloads of your device and press. \n
+        3. The game will automatically launch and the import process will begin. \n
+        3. The game will automatically launch and the import process will begin. \n
+        4. Turn on the mod in world editing. \n
+        5. Done! \n\n
+        <b> Installing mods with the .mcpack extension </b> \n
+        1. Download to your device a mod with the extension .mcpack \n
+        2. If you already have MCPE installed, then just find the mod file and run it. \n
+        3. After clicking, the game will automatically start and import the mod. \n
+        4. After successfully importing all parts of the mod, go to editing the world and in the Resource Sets or Parameter Sets section, activate the mod. \n
+        5. Activation in Resource Sets or Parameter Sets depends on the type of mod, and there can be several files. \n
+        6. If you need to enable experiment functions for the mod to work, then do it. \n
+        7. After successful activation, you can start the world and enjoy the installed mod! \n\n
+        <b> Install mods with .mcaddon extension </b> \n
+        1. Download to your device a mod with the extension .mcaddon \n
+        2. If you already have MCPE installed, then just find the mod and run it. \n
+        3. The game will automatically start and import will start. \n
+        4. After successfully importing all parts of the mod, go to editing the world and in the Resource Sets and Parameter Sets sections, activate all parts of the mod. \n
+        5. If necessary, enable the experiment functions required for the mod to work. \n
+        6. Now you can start the world and enjoy the installed add-on! \n</string>
+	<string name="info_text_part_one">Hello! \n
+        In this application you can download the mod for MCPE to make the game process even more interesting and dynamic. \n\n
+        To see all the mods of our development studio, click on the “ALL MODS” button in the main menu.</string>
+	<string name="info_text_part_two">To download a mod for MCPE: \n \n
+        1. Press the “DOWNLOAD” button in the main menu; \n
+        2. Download the mod by clicking on the "DOWNLOAD" button (you will go to the Google Disk, where the mod is stored, for downloading); \n
+        3. Install the mod according to the instructions that you will find by pressing the “GUIDE” button in the main menu. \n\n
+        Now you can start the world and enjoy the installed add-on!</string>
+	<string name="download_text">Hello! \n \n
+        In this section, you can download the mod on MCPE, to your device. \n \n
+        To download the mod, click on the “DOWNLOAD” button (you will go to the Google-Disk where the mod is stored for download). \n \n
+        You can view detailed information by clicking on the “GUIDE” button in the main menu of the application.</string>
+	<string name="all_mods">Hello! \n \n
+        In this section, you will find all the mods of our development studio that you can install for yourself on MCPE. \n \n
+        When you click on the icon of any of the mods, you will go to our Play Market to download it. \n \n
+        Choose and download!</string>
+	<string name="description_of_logo">Logotype "GO Games Studio"</string>
+	<string name="description_of_btn_info">Button "Information"</string>
+	<string name="description_of_btn_guide">Button "Guide"</string>
+	<string name="description_of_btn_download">Button "Download"</string>
+	<string name="description_of_btn_video">Button "Screen"</string>
+	<string name="description_of_screen">Screen</string>
+	<string name="description_of_btn_all_mods">All mods button</string>
+	<string name="image_mod_desc">Mod icon</string>
+</resources>
