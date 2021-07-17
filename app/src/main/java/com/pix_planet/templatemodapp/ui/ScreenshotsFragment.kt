@@ -1,4 +1,4 @@
-package com.example.templatemodapp.ui
+package com.pix_planet.templatemodapp.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.example.templatemodapp.R
-import com.example.templatemodapp.ui.data.ScreenshotsResource
-import com.example.templatemodapp.utils.loadImageFitCenter
+import com.pix_planet.templatemodapp.R
+import com.pix_planet.templatemodapp.ui.data.ScreenshotsResource
+import com.pix_planet.templatemodapp.utils.loadImageFitCenter
 import com.google.android.gms.ads.AdRequest
 import kotlinx.android.synthetic.main.fragment_screenshots.*
 import kotlinx.android.synthetic.main.fragment_screenshots.adView

@@ -1,4 +1,4 @@
-package com.example.templatemodapp.utils
+package com.pix_planet.templatemodapp.utils
 
 import android.app.Activity
 import android.app.Application
@@ -8,8 +8,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ProcessLifecycleOwner
-import com.example.templatemodapp.MyApplication
-import com.example.templatemodapp.R
+import com.pix_planet.templatemodapp.MyApplication
+import com.pix_planet.templatemodapp.R
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback

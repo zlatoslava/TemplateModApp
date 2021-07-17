@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.templatemodapp">
+    package="com.pix_planet.templatemodapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.example.templatemodapp.MyApplication"
+        android:name="com.pix_planet.templatemodapp.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TemplateModApp">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.pix_planet.templatemodapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

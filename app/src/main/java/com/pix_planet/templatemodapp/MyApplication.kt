@@ -1,7 +1,7 @@
-package com.example.templatemodapp
+package com.pix_planet.templatemodapp
 
 import android.app.Application
-import com.example.templatemodapp.utils.AppOpenManager
+import com.pix_planet.templatemodapp.utils.AppOpenManager
 import com.google.android.gms.ads.MobileAds
 
 

@@ -1,6 +1,6 @@
-package com.example.templatemodapp.ui.data
+package com.pix_planet.templatemodapp.ui.data
 
-import com.example.templatemodapp.R
+import com.pix_planet.templatemodapp.R
 
 object ScreenshotsResource {
 

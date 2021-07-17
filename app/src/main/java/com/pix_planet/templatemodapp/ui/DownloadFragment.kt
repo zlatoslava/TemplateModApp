@@ -1,13 +1,13 @@
-package com.example.templatemodapp.ui
+package com.pix_planet.templatemodapp.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.templatemodapp.R
-import com.example.templatemodapp.utils.openLink
-import com.example.templatemodapp.utils.toastShort
+import com.pix_planet.templatemodapp.R
+import com.pix_planet.templatemodapp.utils.openLink
+import com.pix_planet.templatemodapp.utils.toastShort
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.rewarded.RewardedAd

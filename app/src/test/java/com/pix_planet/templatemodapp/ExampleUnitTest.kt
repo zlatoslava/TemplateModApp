@@ -1,4 +1,4 @@
-package com.example.templatemodapp
+package com.pix_planet.templatemodapp
 
 import org.junit.Test
 

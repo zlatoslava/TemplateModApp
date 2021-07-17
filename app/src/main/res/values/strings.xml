@@ -2,7 +2,7 @@
     <!-- ***************************************************************************** -->
 
     <!-- Имя приложения -->
-    <string name="app_name">TemplateModApp</string>
+    <string name="app_name" translatable="false">TemplateModApp</string>
 
     <!-- Ключи для рекламы -->
     <string name="key_banner" translatable="false">@string/test_key_banner</string>

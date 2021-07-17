@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainMenuFragment"
-        android:name="com.example.templatemodapp.ui.MainMenuFragment"
+        android:name="com.pix_planet.templatemodapp.ui.MainMenuFragment"
         android:label="MainMenuFragment"
         tools:layout="@layout/fragment_main_menu">
         <action
@@ -28,26 +28,26 @@
     </fragment>
     <fragment
         android:id="@+id/downloadFragment"
-        android:name="com.example.templatemodapp.ui.DownloadFragment"
+        android:name="com.pix_planet.templatemodapp.ui.DownloadFragment"
         android:label="DownloadFragment"
         tools:layout="@layout/fragment_download" />
     <fragment
         android:id="@+id/guideFragment"
-        android:name="com.example.templatemodapp.ui.GuideFragment"
+        android:name="com.pix_planet.templatemodapp.ui.GuideFragment"
         android:label="GuideFragment"
         tools:layout="@layout/fragment_guide" />
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.example.templatemodapp.ui.InfoFragment"
+        android:name="com.pix_planet.templatemodapp.ui.InfoFragment"
         android:label="InfoFragment"
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/allModsFragment"
-        android:name="com.example.templatemodapp.ui.AllModsFragment"
+        android:name="com.pix_planet.templatemodapp.ui.AllModsFragment"
         android:label="AllModsFragment"
         tools:layout="@layout/fragment_all_mods" />
     <fragment
         android:id="@+id/screenshotsFragment"
-        android:name="com.example.templatemodapp.ui.ScreenshotsFragment"
+        android:name="com.pix_planet.templatemodapp.ui.ScreenshotsFragment"
         android:label="ScreenshotsFragment" />
 </navigation>

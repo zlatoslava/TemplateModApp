@@ -1,25 +1,21 @@
-package com.example.templatemodapp.ui
+package com.pix_planet.templatemodapp.ui
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.templatemodapp.R
-import com.example.templatemodapp.ui.adapters.AllModsRecyclerAdapter
-import com.example.templatemodapp.ui.data.AllModsRepo
-import com.example.templatemodapp.ui.data.models.Mod
-import com.example.templatemodapp.utils.hide
-import com.example.templatemodapp.utils.openLink
-import com.example.templatemodapp.utils.show
+import com.pix_planet.templatemodapp.R
+import com.pix_planet.templatemodapp.ui.adapters.AllModsRecyclerAdapter
+import com.pix_planet.templatemodapp.ui.data.AllModsRepo
+import com.pix_planet.templatemodapp.ui.data.models.Mod
+import com.pix_planet.templatemodapp.utils.hide
+import com.pix_planet.templatemodapp.utils.openLink
+import com.pix_planet.templatemodapp.utils.show
 import com.google.android.gms.ads.AdRequest
 import kotlinx.android.synthetic.main.fragment_all_mods.*
 import kotlinx.android.synthetic.main.fragment_all_mods.adView
-import java.lang.Exception
 
 
 class AllModsFragment : Fragment(), AllModsRecyclerAdapter.Listener {

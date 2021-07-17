@@ -1,6 +1,5 @@
 <resources>
-	<string name="app_name">TemplateModApp</string>
-	<string name="toast_failed_show_ad">To download the mod, first watch the video by clicking on DOWNLOAD!</string>
+    <string name="toast_failed_show_ad">To download the mod, first watch the video by clicking on DOWNLOAD!</string>
 	<string name="invalid_link">Something went wrong.</string>
 	<string name="no_mods">Coming soon.</string>
 	<string name="guide_text">Hello! \n\n

@@ -1,4 +1,4 @@
-package com.example.templatemodapp.utils
+package com.pix_planet.templatemodapp.utils
 
 import android.content.Context
 import android.content.Intent
@@ -12,7 +12,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.example.templatemodapp.R
+import com.pix_planet.templatemodapp.R
 import java.lang.Exception
 
 fun ViewGroup.inflate(@LayoutRes layoutRes: Int, attachToRoot: Boolean = false): View {
@@ -22,6 +22,16 @@ fun ViewGroup.inflate(@LayoutRes layoutRes: Int, attachToRoot: Boolean = false):
 fun ImageView.loadImage(url: String) {
     Glide.with(this)
         .load(url)
+        .centerCrop()
+        .placeholder(R.drawable.ic_image)
+        .error(R.drawable.ic_broken_image)
+        .into(this)
+}
+
+fun ImageView.loadImage(@DrawableRes id: Int) {
+    Glide.with(this)
+        .asDrawable()
+        .load(id)
         .centerCrop()
         .placeholder(R.drawable.ic_image)
         .error(R.drawable.ic_broken_image)

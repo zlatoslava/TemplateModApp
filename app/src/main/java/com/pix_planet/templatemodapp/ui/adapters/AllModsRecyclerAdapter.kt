@@ -1,13 +1,13 @@
-package com.example.templatemodapp.ui.adapters
+package com.pix_planet.templatemodapp.ui.adapters
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.templatemodapp.R
-import com.example.templatemodapp.ui.data.models.Mod
-import com.example.templatemodapp.utils.inflate
-import com.example.templatemodapp.utils.loadImage
+import com.pix_planet.templatemodapp.R
+import com.pix_planet.templatemodapp.ui.data.models.Mod
+import com.pix_planet.templatemodapp.utils.inflate
+import com.pix_planet.templatemodapp.utils.loadImage
 import com.google.android.material.card.MaterialCardView
 
 class AllModsRecyclerAdapter(private val listener: Listener) :
