@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "754100802343",
+    "project_id": "templatemodd",
+    "storage_bucket": "templatemodd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754100802343:android:8b044c3480a46ce83acf02",
+        "android_client_info": {
+          "package_name": "com.squidgamepp.templatemodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754100802343-ehk1pn9ickqaqvnk6eug4u0bg8glsnno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaVQRz56Svpbw-SiYcs9KIfAfo3UYjPV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754100802343-ehk1pn9ickqaqvnk6eug4u0bg8glsnno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

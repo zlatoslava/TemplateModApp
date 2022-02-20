@@ -7,13 +7,24 @@
     android:id="@+id/cvMod"
     android:layout_margin="@dimen/small"
     android:background="@android:color/transparent"
-    app:cardCornerRadius="@dimen/small">
+    app:cardCornerRadius="33dp">
 
-    <ImageView
-        android:id="@+id/imgModIcon"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:contentDescription="@string/image_mod_desc"
-        android:scaleType="centerInside" />
+        android:layout_height="wrap_content" >
 
+        <ImageView
+            android:id="@+id/imgModIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="H,1:1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_mod_desc"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

@@ -2,19 +2,19 @@
     <!-- ***************************************************************************** -->
 
     <!-- Имя приложения -->
-    <string name="app_name" translatable="false">TemplateModApp</string>
+    <string name="app_name" translatable="false">Squid Game mod for MinecraftPE</string>
 
     <!-- Ключи для рекламы -->
-    <string name="key_banner" translatable="false">@string/test_key_banner</string>
-    <string name="key_add_open" translatable="false">@string/test_key_add_open</string>
-    <string name="key_interstitial" translatable="false">@string/test_key_interstitial</string>
-    <string name="key_reward" translatable="false">@string/test_key_reward</string>
+    <string name="key_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="key_add_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="key_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="key_reward" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
 
     <!-- Ссылка для загрузки мода. ВАЖНО! должна начинаться с "https://"-->
-    <string name="download_link" translatable="false">https://www.google.com</string>
+    <string name="download_link" translatable="false">https://drive.google.com/drive/folders/1HTo8AuMEBViootntso9C-thEuRA-Bp3H?usp=sharing</string>
 
     <!-- AdMob id приложения -->
-    <string name="admob_app_id" translatable="false">@string/test_admob_app_id</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
 
 
     <!-- ***************************************************************************** -->
@@ -23,11 +23,13 @@
     <string name="toast_failed_show_ad">Чтобы загрузить мод, сначала посмотри видео, нажав на DOWNLOAD!</string>
     <string name="invalid_link">Что-то пошло не так.</string>
     <string name="no_mods">Ждите в ближайшее время.</string>
+    <string name="no_connection">Чтобы загрузить мод, включи интернет соединение!</string>
 
     <!-- Тексты -->
     <string name="guide_text">
         Привет!\n\n
-        В этом разделе, ты найдешь инструкцию из последовательных шагов, чтобы установить мод на MCPE, на свое устройство.\n\n
+        Данный раздел не описывает функции данного приложения, а описывает только инструкцию по тому, как установить мод (который ты можешь скачать в нашем приложении) в игру Minecraft PE, которая должна быть установлена у тебя на устройстве.\n\n
+        Цель инструкции - помочь тебе в установке мода в игру Minecraft PE, которая является отдельным приложением от нашего приложения.\n\n
         <b>Инструкция по установке модов на MCPE</b>\n
         1. Скачай файл мода.\n
         Информацию о том, как скачать мод, ты сможешь найти нажав на кнопку “INFO”, в главном меню приложения.\n
@@ -96,4 +98,10 @@
     <string name="test_key_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
     <string name="test_key_reward" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
     <string name="test_admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="file_was_downloaded">Файл успешно загружен</string>
+    <string name="open_folder">Открыть папку</string>
+    <string name="provide_permission">Пожалуйста, дайте разрешение на скачивание файла</string>
+    <string name="downloading">Загрузка</string>
+    <string name="error">Ошибка скачивания файла. Пожалуйста, попробуйте ещё раз</string>
 </resources>

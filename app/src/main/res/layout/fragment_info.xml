@@ -10,10 +10,10 @@
         android:id="@+id/scrollView"
         style="@style/ScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/standard"
         android:padding="@dimen/standard"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -30,15 +30,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/info_text_part_one" />
 
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginVertical="@dimen/standard"
-                ads:adSize="LARGE_BANNER"
-                ads:adUnitId="@string/key_banner" />
-
             <TextView
                 android:id="@+id/tvInfoPartTwo"
                 style="@style/TextInfo"
@@ -47,4 +38,16 @@
                 android:text="@string/info_text_part_two" />
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/standard"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="@string/key_banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
