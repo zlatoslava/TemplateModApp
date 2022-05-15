@@ -10,8 +10,10 @@
     <string name="key_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
     <string name="key_reward" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
 
-    <!-- Ссылка для загрузки мода. ВАЖНО! должна начинаться с "https://"-->
-    <string name="download_link" translatable="false">https://drive.google.com/drive/folders/1HTo8AuMEBViootntso9C-thEuRA-Bp3H?usp=sharing</string>
+    <!--    Название файла, будет отображаться у юзера при скачивании-->
+    <string name="file_name" translatable="false">File name</string>
+    <!-- Ссылка для загрузки мода. Берём её в Firebase -->
+    <string name="download_link" translatable="false">gs://templatemodd.appspot.com/4STHdzNjOsw.jpg</string>
 
     <!-- AdMob id приложения -->
     <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>

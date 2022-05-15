@@ -27,10 +27,9 @@ import kotlinx.android.synthetic.main.fragment_download.*
 class DownloadFragment : Fragment() {
 
     //Название файла, будет отображаться у юзера при скачивании
-    val fileName = "testName"
-
+    private val fileName by lazy { requireContext().getString(R.string.file_name)}
     //ссылка на файл
-    val fileUrl = "gs://templatemodd.appspot.com/4STHdzNjOsw.jpg"
+    private val fileUrl by lazy { requireContext().getString(R.string.download_link)}
 
     private var addWatched = false
     private val adRequest = AdRequest.Builder().build()
@@ -55,7 +54,6 @@ class DownloadFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         loadAdd()
-
     }
 
     private fun loadAdd() {
