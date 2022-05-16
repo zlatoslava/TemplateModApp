@@ -7,54 +7,53 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
 
-    <View
-        android:id="@+id/back_view"
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/ScrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/standard"
-        android:background="@color/textBackgroundColor"
-        app:layout_constraintBottom_toTopOf="@+id/adView"
+        android:padding="@dimen/standard"
+        app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/tv_AllMods"
-        style="@style/TextInfo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:paddingHorizontal="@dimen/standard"
-        android:text="@string/all_mods"
-        app:layout_constraintEnd_toEndOf="@id/back_view"
-        app:layout_constraintStart_toStartOf="@id/back_view"
-        app:layout_constraintTop_toTopOf="@id/back_view" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvAllMods"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="@id/back_view"
-        app:layout_constraintEnd_toEndOf="@id/back_view"
-        app:layout_constraintStart_toStartOf="@id/back_view"
-        app:layout_constraintTop_toBottomOf="@id/tv_AllMods"
-        tools:listitem="@layout/item_mod" />
+            <TextView
+                android:id="@+id/tv_AllMods"
+                style="@style/TextInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingHorizontal="@dimen/standard"
+                android:text="@string/all_mods" />
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/noMods"
-        style="@style/TextInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/xx_large"
-        android:gravity="center"
-        android:text="@string/no_mods"
-        android:textSize="20sp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_AllMods"
-        tools:visibility="visible" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAllMods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_mod" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/noMods"
+                style="@style/TextInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/no_mods"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
