@@ -13,7 +13,7 @@
     <!--    Название файла, будет отображаться у юзера при скачивании-->
     <string name="file_name" translatable="false">File name</string>
     <!-- Ссылка для загрузки мода. Берём её в Firebase -->
-    <string name="download_link" translatable="false">gs://templatemodd.appspot.com/4STHdzNjOsw.jpg</string>
+    <string name="download_link" translatable="false">https://1drv.ms/u/s!AiW9rR1zMXcBdwUE9aEiL-PkUhU?e=bne5NH</string>
 
     <!-- AdMob id приложения -->
     <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>

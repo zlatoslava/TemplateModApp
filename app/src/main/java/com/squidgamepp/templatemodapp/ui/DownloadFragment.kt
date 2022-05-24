@@ -2,8 +2,10 @@ package com.squidgamepp.templatemodapp.ui
 
 
 import android.Manifest
-import android.app.DownloadManager
+import android.content.ActivityNotFoundException
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -20,6 +22,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.squidgamepp.templatemodapp.R
 import com.squidgamepp.templatemodapp.utils.downloadFile
 import com.squidgamepp.templatemodapp.utils.isNetworkAvailable
+import com.squidgamepp.templatemodapp.utils.openLink
 import com.squidgamepp.templatemodapp.utils.toastShort
 import kotlinx.android.synthetic.main.fragment_download.*
 
@@ -27,9 +30,12 @@ import kotlinx.android.synthetic.main.fragment_download.*
 class DownloadFragment : Fragment() {
 
     //Название файла, будет отображаться у юзера при скачивании
-    private val fileName by lazy { requireContext().getString(R.string.file_name)}
+    private val fileName by lazy { requireContext().getString(R.string.file_name) }
+
     //ссылка на файл
-    private val fileUrl by lazy { requireContext().getString(R.string.download_link)}
+    private val fileUrl by lazy { requireContext().getString(R.string.download_link) }
+
+    private val downloadLink by lazy { requireContext().getString(R.string.download_link) }
 
     private var addWatched = false
     private val adRequest = AdRequest.Builder().build()
@@ -103,6 +109,14 @@ class DownloadFragment : Fragment() {
     }
 
     private fun download() {
+        downloadFromDropbox()
+    }
+
+    private fun downloadFromDropbox() {
+        requireContext().openLink(downloadLink)
+    }
+
+    private fun downloadFromFirebase() {
         val storage = FirebaseStorage.getInstance()
         val gsReference = storage.getReferenceFromUrl(fileUrl)
 
