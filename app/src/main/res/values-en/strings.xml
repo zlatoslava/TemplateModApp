@@ -38,7 +38,7 @@
         Now you can start the world and enjoy the installed add-on!</string>
 	<string name="download_text">Hello! \n \n
         In this section, you can download the mod on MCPE, to your device. \n \n
-        To download the mod, click on the “DOWNLOAD” button (you will go to the Google-Disk where the mod is stored for download). \n \n
+        To download the mod, click on the “DOWNLOAD” button (you will need to watch ads and you will go to the DropBox link where the mod is stored for download). \n \n
         You can view detailed information by clicking on the “GUIDE” button in the main menu of the application.</string>
 	<string name="all_mods">Hello! \n \n
         In this section, you will find all the mods of our development studio that you can install for yourself on MCPE. \n \n
@@ -58,4 +58,8 @@
     <string name="provide_permission">Please grant permission to be able to download file</string>
     <string name="downloading">Downloading</string>
     <string name="error">Error downloading file. Please, try again.</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="watch_ad_reward_confirmation">Do you want to watch ads to get access to download mod files?</string>
 </resources>

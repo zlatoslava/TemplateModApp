@@ -2,6 +2,7 @@ package com.squidgamepp.templatemodapp.ui
 
 
 import android.Manifest
+import android.app.Dialog
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -11,6 +12,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
@@ -18,6 +20,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+import com.google.android.material.button.MaterialButton
 import com.google.firebase.storage.FirebaseStorage
 import com.squidgamepp.templatemodapp.R
 import com.squidgamepp.templatemodapp.utils.downloadFile
@@ -93,19 +96,41 @@ class DownloadFragment : Fragment() {
 
     private fun initDownload() {
         btnDownload.setOnClickListener {
-            if (requireContext().isNetworkAvailable()) {
-                if (rewardedAd != null) {
-                    rewardedAd?.show(
-                        requireActivity()
-                    ) {
-                        addWatched = true
-                        download()
-                    }
-                } else {
+            showConfirmationDialog()
+        }
+    }
+
+    private fun showConfirmationDialog() {
+        with(Dialog(requireContext(), R.style.WideDialog)) {
+            requestWindowFeature(Window.FEATURE_NO_TITLE)
+            window?.setBackgroundDrawableResource(android.R.color.transparent)
+            setCancelable(true)
+            setCanceledOnTouchOutside(true)
+            setContentView(R.layout.dialog_download_reward_confirmation)
+            (findViewById<MaterialButton>(R.id.btnPositive)).setOnClickListener {
+                showRewardedAd()
+                dismiss()
+            }
+            (findViewById<MaterialButton>(R.id.btnNegative)).setOnClickListener {
+                dismiss()
+            }
+            show()
+        }
+    }
+
+    private fun showRewardedAd() {
+        if (requireContext().isNetworkAvailable()) {
+            if (rewardedAd != null) {
+                rewardedAd?.show(
+                    requireActivity()
+                ) {
+                    addWatched = true
                     download()
                 }
-            } else toastShort(getString(R.string.no_connection))
-        }
+            } else {
+                download()
+            }
+        } else toastShort(getString(R.string.no_connection))
     }
 
     private fun download() {

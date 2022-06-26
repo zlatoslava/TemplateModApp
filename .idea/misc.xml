@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/drawable/tab_indicator_selected.xml" value="0.207" />
         <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/dialog_download_reward_confirmation.xml" value="0.253125" />
         <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/fragment_all_mods.xml" value="0.176" />
         <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/fragment_download.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/fragment_guide.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/fragment_info.xml" value="0.2" />
-        <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/fragment_main_menu.xml" value="0.2" />
+        <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/fragment_main_menu.xml" value="0.6" />
         <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/fragment_screenshots.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/ancka/AndroidStudioProjects/TemplateModApp/TemplateModApp/app/src/main/res/layout/image_logo.xml" value="0.25416666666666665" />
       </map>
